@@ -1,4 +1,4 @@
-SonicBoomGames---UVV
+SonicBoomGames - UVV
 ====================
 
-Projeto iniciado no grupo de estudos SI5N - Uvv
+Projeto iniciado na aula inaugural do grupo de estudos SI5N - UVV
