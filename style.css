@@ -50,7 +50,7 @@ body{ background: url(../../imagens/background.jpg) repeat;}
 .text-title{ font-size: 30px; color: #000; text-align: right;}
 
 .container-conteudo{ width: 100%; float: left;}
-.conteudo{ width: 970px; margin: 0 auto; background: #fff; margin-top: 3px;}
+.conteudo{ width: 970px; margin: 0 auto; margin-top: 3px;}
 .container-banner{ height: 277px; position: relative;}
 .container-banner ol{ position: absolute; bottom: 10px; left: 433px;}
 .container-banner ol li{ width: 17px; height: 17px; background: #00542d; border: 2px solid #fff; border-radius: 20px; float: left; margin: 3px; cursor: pointer;}
@@ -59,13 +59,14 @@ body{ background: url(../../imagens/background.jpg) repeat;}
 .container-banner ol li a{ text-decoration: none;}
 
 .container-title{ width: 100%; height: 50px; line-height: 50px; float: left;}
-.title{ font-size: 25px; color: #01422c; float: left;}
+.title{ font-size: 25px; color: #01422c; float: left; margin-left: 25px;}
 .more{ float: left; font-size: 18px; }
 .more a{text-decoration: none; color: #555;}
 
-.produtos{ width: 100%; float: left; background: #f01;}
-.produtos ul{ width: 100%; height: 285px;}
-.produtos ul li{ width: 202px; height: 285px; background: #ededed; border: 1px solid #b8b8b8; float: left;}
+.container-produto{width: 100%; float: left; background: #fff;}
+.produtos{ width: 100%; float: left;}
+.produtos ul{ width: 100%; height: 570px;}
+.produtos ul li{ width: 202px; height: 285px; background: #ededed; border: 1px solid #b8b8b8; float: left; margin-left: 18px; margin-right: 18px; margin-top: 20px;}
 .produtos ul li:hover{ border-color: #006134;}
 .container-info{ width: 100%; height: 100%;}
 .info-img{ float: left; width: 169px; height: 152px; margin: 15px; background: #fff; border: 1px solid #b8b8b8; text-align: center;}
@@ -74,3 +75,5 @@ body{ background: url(../../imagens/background.jpg) repeat;}
 
 .info-text{ width: 100%; float: left; height: 100px; text-align: center; color: #000; font-size: 18px;}
 .info-text strong{ color: #f16261;}
+
+.no-margin-top{margin-top: 0px !important;}
