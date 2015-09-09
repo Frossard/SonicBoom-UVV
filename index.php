@@ -2,47 +2,12 @@
 <html lang="pt-br">
     <head>
         <title>Sonic Boom Games</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link href="biblioteca/css/style.css" type="text/css" rel="stylesheet"/>
+        <?php include("includes/cabecalho.php");?>
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <div class="container-top">
-                    <div class="top">
-                        <div class="container-logo">
-                            <a href="#">
-                                <img src="imagens/logotipo.png" alt="logotipo"/>
-                            </a>
-                        </div>
-                        <div class="container-endereco">
-                            <div class="redes-sociais">
-                                <ul>
-                                    <li><a href="#"><img src="imagens/icon-facebook.png" alt="facebook"/></a></li>
-                                    <li><a href="#"><img src="imagens/icon-twitter.png" alt="twitter"/></a></li>
-                                    <li><a href="#"><img src="imagens/icon-youtube.png" alt="youtube"/></a></li>
-                                </ul>
-                            </div>
-                            <div class="endereco">
-                                <div class="text text-title">
-                                    (27) 3378-2342<br/>
-                                    (27) 9 9432-2341<br/>
-                                    Av. Jil Veloso, 467 - Vitória - ES
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-menu">
-                    <ul>
-                        <li><a href="#"><p>A Sonic Boom</p></a></li>
-                        <li><a href="#"><p>Produtos</p></a></li>
-                        <li><a href="#"><p>Novidades</p></a></li>
-                        <li><a href="#"><p>Parceiros</p></a></li>
-                        <li><a href="#"><p>Contato</p></a></li>
-                    </ul>
-                </div>
-            </div>
+            <?php include("includes/header.php");?>
+            
             <div class="container-conteudo">
                 <div class="conteudo">
                     <div class="container-banner" style="background: url(imagens/banner1.jpg) no-repeat center">
@@ -184,28 +149,7 @@
                 </div>
             </div>
             
-            <div id="footer">
-                <div class="container-footer">
-                    <div class="top-footer">
-                        <ul id="contato-footer">
-                            <li><a href="" class="icon-mail">contato@sonicboom.com.br</a></li>
-                            <li><a href="" class="icon-skype">sonic.boom27</a></li>
-                            <li><span class="icon-phone">(27) 3378-2342</span></li>
-                        </ul>
-                        <div id="newsletter">
-                            <p>Receba nossas novidades:</p>
-                            <form method="post" action="">
-                                <input type="text" name="news-nome" placeholder="Nome" required/>
-                                <input type="text" name="news-email" placeholder="E-mail" required/>
-                                <input type="submit" value="Enviar"/>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="bot-footer">
-                        <span>Sonic Boom LTDA todos os direitos reservados</span>
-                    </div>
-                </div>
-            </div>
+            <?php include("includes/footer.php");?>
         </div>
     </body>
 </html>
