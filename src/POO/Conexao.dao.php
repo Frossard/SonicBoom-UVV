@@ -22,20 +22,16 @@ class Conexao{
         }        
     }
     
-    public function Insert($req){
+    public function ExecutaQuery($SQL){
         
-        $nome = addslashes($req["news-nome"]);
-        $email = addslashes($req["news-email"]);
-        
-        $SQL = "INSERT INTO newsletter (newsletter_nome, newsletter_email) VALUES ('".$nome."', '".$email."')";
-
         if ($this->conn->query($SQL) === TRUE) {
-            return "Registro Incluído!";
+            $msg = "Registro Incluído!";
         } else {
-            echo "Error: " . $SQL . "<br>" . $this->conn->error;
+            $msg = "Error: " . $SQL . "<br>" . $this->conn->error;
         }
 
         $this->conn->close();
+        return $msg;
     }
 }
 

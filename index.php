@@ -1,18 +1,22 @@
 <?php 
-    ### Estruturado ###
-    require_once("./src/conexao.php");
-    include("./src/insert.php");  
+    #Estruturado
+    require_once("./src/estrutural/conexao.php");
+    include("./src/estrutural/insert.php");
     
-    ### Orientado a Objeto ###    
-    /*require_once ("./src/POO.php");
+    #Orientado a Objeto
+    /*require_once ("./src/POO/Conexao.dao.php");
+    include("./src/POO/Newsletter.dao.php");
+    include("./src/POO/Newsletter.model.php");
+    include("./src/POO/Newsletter.controller.php");
     
-    $con = new Conexao();
-    
+    #Listener simplificado
     if(isset($_POST["news-email"])){
-        $msg = $con->Insert($_POST);
+        #Obj Controle
+        $newsControle = new NewsletterController();
+        $msg = $newsControle->Adicionar($_POST);
     }
     */
-    ### Variaveis do site ###
+    #Variaveis do site
     include("./src/variaveis.php");
 ?>
 <!DOCTYPE html>
