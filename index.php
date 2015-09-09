@@ -1,7 +1,18 @@
 <?php 
-    include("./src/conexao.php");
-    include("./src/insert.php");
+    ### Estruturado ###
+    require_once("./src/conexao.php");
+    include("./src/insert.php");  
     
+    ### Orientado a Objeto ###    
+    /*require_once ("./src/POO.php");
+    
+    $con = new Conexao();
+    
+    if(isset($_POST["news-email"])){
+        $msg = $con->Insert($_POST);
+    }
+    */
+    ### Variaveis do site ###
     include("./src/variaveis.php");
 ?>
 <!DOCTYPE html>
