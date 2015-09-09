@@ -1,7 +1,13 @@
+<?php 
+    include("./src/conexao.php");
+    include("./src/insert.php");
+    
+    include("./src/variaveis.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Sonic Boom Games</title>
+        <title><?php echo $nome_site;?></title>
         <?php include("includes/cabecalho.php");?>
     </head>
     <body>

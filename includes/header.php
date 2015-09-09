@@ -16,9 +16,9 @@
                 </div>
                 <div class="endereco">
                     <div class="text text-title">
-                        (27) 3378-2342<br/>
-                        (27) 9 9432-2341<br/>
-                        Av. Jil Veloso, 467 - Vitória - ES
+                        <?php echo $telefone1;?><br/>
+                        <?php echo $telefone2;?><br/>
+                        <?php echo $endereco;?>
                     </div>
                 </div>
             </div>
@@ -26,11 +26,13 @@
     </div>
     <div class="container-menu">
         <ul>
-            <li><a href="#"><p>A Sonic Boom</p></a></li>
-            <li><a href="#"><p>Produtos</p></a></li>
-            <li><a href="#"><p>Novidades</p></a></li>
-            <li><a href="#"><p>Parceiros</p></a></li>
-            <li><a href="#"><p>Contato</p></a></li>
+            <?php 
+                foreach($menu as $texto => $link){ 
+            ?>
+            <li><a href="<?php echo $link;?>"><p><?php echo $texto;?></p></a></li>
+            <?php 
+                } 
+            ?>
         </ul>
     </div>
 </div>
